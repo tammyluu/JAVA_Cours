@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>page B</title>
+    <span th:replace="~{pagea :: bootstrapImports}"></span>
+</head>
+<body>
+<header>
+    <h1> Page B</h1>
+    <nav>
+        <a th:href="@{/}">Home Page</a>
+    </nav>
+</header>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+28-Jan-2024 10:06:52.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+28-Jan-2024 10:06:52.150 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+11-LTS-201
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical
+28-Jan-2024 10:06:52.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\01_ENV\WorkSpace\apache-tomcat-10.1.18
+28-Jan-2024 10:06:52.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+28-Jan-2024 10:06:52.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+28-Jan-2024 10:06:52.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+28-Jan-2024 10:06:52.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+28-Jan-2024 10:06:52.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+28-Jan-2024 10:06:52.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\01_ENV\WorkSpace\apache-tomcat-10.1.18
+28-Jan-2024 10:06:52.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical
+28-Jan-2024 10:06:52.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical\temp
+28-Jan-2024 10:06:52.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical\conf\logging.properties
+28-Jan-2024 10:06:52.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Jan-2024 10:06:52.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.5\lib\idea_rt.jar=65387:C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.5\bin
+28-Jan-2024 10:06:52.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+28-Jan-2024 10:06:52.173 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.21.9-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft\jdk-11.0.21.9-hotspot\\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\xampp\php;C:\composer;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\luuta\AppData\Local\Android\Sdk\platform-tools;C:\Users\luuta\AppData\Local\Android\Sdk\tools;C:\Users\luuta\scoop\shims;C:\Users\luuta\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2022.2.3\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.5\bin;;C:\Users\luuta\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\luuta\AppData\Roaming\Composer\vendor\bin;C:\Users\luuta\AppData\Local\GitHubDesktop\bin;C:\Users\luuta\AppData\Roaming\npm;C:\Program Files\apache-maven-3.9.5\bin;;.]
+28-Jan-2024 10:06:52.433 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Jan-2024 10:06:52.458 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [548] milliseconds
+28-Jan-2024 10:06:52.520 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Jan-2024 10:06:52.520 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+28-Jan-2024 10:06:52.532 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical\conf\Catalina\localhost\gestion_medical.xml]
+28-Jan-2024 10:06:54.489 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Jan-2024 10:06:54.618 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical\conf\Catalina\localhost\gestion_medical.xml] has finished in [2,086] ms
+28-Jan-2024 10:06:54.621 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Jan-2024 10:06:54.661 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2202] milliseconds
+28-Jan-2024 10:57:36.865 INFO [http-nio-8080-exec-8] org.hibernate.Version.logVersion HHH000412: Hibernate ORM core version 5.6.14.Final
+28-Jan-2024 10:57:36.879 INFO [http-nio-8080-exec-8] org.hibernate.cfg.Environment.<clinit> HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.password=****, hibernate.connection.username=root, hibernate.connection.url=jdbc:mysql://localhost:3306/hospital, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.connection.pool_size=10}
+28-Jan-2024 10:57:37.873 WARN [http-nio-8080-exec-8] org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver.resolveEntity HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-Jan-2024 10:57:39.122 INFO [http-nio-8080-exec-8] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+28-Jan-2024 10:57:39.710 WARN [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+28-Jan-2024 10:57:39.737 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hospital]
+28-Jan-2024 10:57:39.738 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=root}
+28-Jan-2024 10:57:39.738 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+28-Jan-2024 10:57:39.756 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 10 (min=1)
+28-Jan-2024 10:57:40.901 INFO [http-nio-8080-exec-8] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+28-Jan-2024 10:57:44.401 INFO [http-nio-8080-exec-8] org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7f293eb8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+28-Jan-2024 10:57:44.764 INFO [http-nio-8080-exec-8] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+28-Jan-2024 15:38:01.114 WARN [http-nio-8080-exec-5] org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver.resolveEntity HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-Jan-2024 15:38:01.179 WARN [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+28-Jan-2024 15:38:01.179 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hospital]
+28-Jan-2024 15:38:01.180 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=root}
+28-Jan-2024 15:38:01.180 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+28-Jan-2024 15:38:01.180 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 10 (min=1)
+28-Jan-2024 15:38:01.238 INFO [http-nio-8080-exec-5] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+28-Jan-2024 15:38:01.480 INFO [http-nio-8080-exec-5] org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@755d1095] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+28-Jan-2024 15:38:01.656 INFO [http-nio-8080-exec-5] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+28-Jan-2024 15:38:50.205 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Jan-2024 15:38:50.224 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-Jan-2024 15:38:50.233 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [gestion_medical] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Jan-2024 15:38:50.235 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gestion_medical] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.9/java.lang.Object.wait(Native Method)
+ java.base@17.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.9/java.lang.Thread.run(Thread.java:842)
+28-Jan-2024 15:38:50.236 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gestion_medical] appears to have started a thread named [Hibernate Connection Pool Validation Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.9/java.lang.Thread.run(Thread.java:842)
+28-Jan-2024 15:38:50.236 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gestion_medical] appears to have started a thread named [Hibernate Connection Pool Validation Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.9/java.lang.Thread.run(Thread.java:842)
+28-Jan-2024 15:38:50.254 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Jan-2024 15:38:52.607 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1373)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:971)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+28-Jan-2024 15:39:07.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+28-Jan-2024 15:39:07.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+28-Jan-2024 15:39:07.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+28-Jan-2024 15:39:07.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+28-Jan-2024 15:39:07.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+28-Jan-2024 15:39:07.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Jan-2024 15:39:07.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+28-Jan-2024 15:39:07.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+11-LTS-201
+28-Jan-2024 15:39:07.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Jan-2024 15:39:07.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical
+28-Jan-2024 15:39:07.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\01_ENV\WorkSpace\apache-tomcat-10.1.18
+28-Jan-2024 15:39:07.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\01_ENV\WorkSpace\apache-tomcat-10.1.18
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical\temp
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical\conf\logging.properties
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Jan-2024 15:39:07.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.5\lib\idea_rt.jar=60992:C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.5\bin
+28-Jan-2024 15:39:07.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+28-Jan-2024 15:39:07.847 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.21.9-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft\jdk-11.0.21.9-hotspot\\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\xampp\php;C:\composer;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\luuta\AppData\Local\Android\Sdk\platform-tools;C:\Users\luuta\AppData\Local\Android\Sdk\tools;C:\Users\luuta\scoop\shims;C:\Users\luuta\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2022.2.3\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.5\bin;;C:\Users\luuta\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\luuta\AppData\Roaming\Composer\vendor\bin;C:\Users\luuta\AppData\Local\GitHubDesktop\bin;C:\Users\luuta\AppData\Roaming\npm;C:\Program Files\apache-maven-3.9.5\bin;;.]
+28-Jan-2024 15:39:08.163 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Jan-2024 15:39:08.185 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [680] milliseconds
+28-Jan-2024 15:39:08.252 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Jan-2024 15:39:08.252 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+28-Jan-2024 15:39:08.268 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical\conf\Catalina\localhost\gestion_medical.xml]
+28-Jan-2024 15:39:10.200 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Jan-2024 15:39:10.307 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\01_ENV\WorkSpace\JAVA\JEE\Exercice\gestion_medical\conf\Catalina\localhost\gestion_medical.xml] has finished in [2,039] ms
+28-Jan-2024 15:39:10.311 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Jan-2024 15:39:10.350 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2164] milliseconds
+28-Jan-2024 15:39:36.710 INFO [http-nio-8080-exec-5] org.hibernate.Version.logVersion HHH000412: Hibernate ORM core version 5.6.14.Final
+28-Jan-2024 15:39:36.726 INFO [http-nio-8080-exec-5] org.hibernate.cfg.Environment.<clinit> HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.password=****, hibernate.connection.username=root, hibernate.connection.url=jdbc:mysql://localhost:3306/hospital, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.connection.pool_size=10}
+28-Jan-2024 15:39:37.514 WARN [http-nio-8080-exec-5] org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver.resolveEntity HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-Jan-2024 15:39:38.459 INFO [http-nio-8080-exec-5] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+28-Jan-2024 15:39:38.883 WARN [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+28-Jan-2024 15:39:38.893 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hospital]
+28-Jan-2024 15:39:38.895 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=root}
+28-Jan-2024 15:39:38.895 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+28-Jan-2024 15:39:38.993 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 10 (min=1)
+28-Jan-2024 15:39:40.136 INFO [http-nio-8080-exec-5] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+28-Jan-2024 15:39:42.686 INFO [http-nio-8080-exec-5] org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44d54cb6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+28-Jan-2024 15:39:42.985 INFO [http-nio-8080-exec-5] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+28-Jan-2024 15:39:43.663 WARN [http-nio-8080-exec-2] org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver.resolveEntity HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-Jan-2024 15:39:43.693 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+28-Jan-2024 15:39:43.693 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hospital]
+28-Jan-2024 15:39:43.694 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=root}
+28-Jan-2024 15:39:43.695 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+28-Jan-2024 15:39:43.695 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 10 (min=1)
+28-Jan-2024 15:39:43.722 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+28-Jan-2024 15:39:43.861 INFO [http-nio-8080-exec-2] org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@29c8880b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+28-Jan-2024 15:39:44.060 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+28-Jan-2024 22:39:54.301 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Jan-2024 22:39:54.345 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-Jan-2024 22:39:54.427 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [gestion_medical] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Jan-2024 22:39:54.474 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gestion_medical] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.9/java.lang.Object.wait(Native Method)
+ java.base@17.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.9/java.lang.Thread.run(Thread.java:842)
+28-Jan-2024 22:39:54.476 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gestion_medical] appears to have started a thread named [Hibernate Connection Pool Validation Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.9/java.lang.Thread.run(Thread.java:842)
+28-Jan-2024 22:39:54.479 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gestion_medical] appears to have started a thread named [Hibernate Connection Pool Validation Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.9/java.lang.Thread.run(Thread.java:842)
+28-Jan-2024 22:39:54.532 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Jan-2024 22:39:55.119 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1373)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:971)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+28-Jan-2024 22:40:04.538 WARNING [Thread-1] org.apache.tomcat.util.net.Acceptor.stop The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+28-Jan-2024 22:40:04.555 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

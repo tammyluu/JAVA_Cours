@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <mapping class="com.example.gestion_medical.entities.Patient" />
+        <mapping class="com.example.gestion_medical.entities.PatientChart" />
+        <mapping class="com.example.gestion_medical.entities.Consultation" />
+        <mapping class="com.example.gestion_medical.entities.Prescription" />
+        <mapping class="com.example.gestion_medical.entities.User" />
+
+
+
+    </session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,13 @@
+.background-image {
+    background-image: url('/static/images/lady.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verification{
+ color: crimson;
+}

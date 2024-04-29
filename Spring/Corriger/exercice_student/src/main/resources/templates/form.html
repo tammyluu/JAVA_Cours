@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste</title>
+    <span th:replace="~{home :: bootstrapImports}"></span>
+</head>
+<body>
+<span th:replace="~{home :: navbar}"></span>
+<main class="container">
+    <h1>Formulaire</h1>
+    <form th:action="@{/student}" th:object="${student}"  method="post">
+<!--        on est dans objet student -> on met * -->
+<!--        au cas récupérer un id si un student existe, si non, un nouveau student sera pas affiche champs id-->
+        <input type="hidden" th:field="*{id}">
+        <div class="mb-3">
+            <label for="firstnameStudent" class="form-label">Nom : </label>
+            <input th:field="*{firstName}"  type="text" class="form-control" id="firstnameStudent" aria-describedby="etudiantHelp">
+            <div  class="form-text">Nom de l'étudiant.</div>
+            <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="verification text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="lastnameStudent" class="form-label">Préom : </label>
+            <input th:field="*{lastName}"   type="text" class="form-control" id="lastnameStudent" aria-describedby="etudiantHelp">
+            <div  class="form-text">Prénom de l'étudiant.</div>
+            <span th:if="${#fields.hasErrors('lasttName')}" th:errors="*{lastName}" class="verification text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="ageStudent" class="form-label">Age de l'étudiant</label>
+            <input th:field="*{age}"    type="number" class="form-control" id="ageStudent">
+            <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}" class="verification text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="mailStudent" class="form-label">Email de l'étudiant</label>
+            <input th:field="*{email}"    type="text" class="form-control" id="mailStudent">
+            <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="verification text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary"><span th:text="${student.id !=null} ? 'Modifier'"></span></button>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+
+
+    </form>
+</main>
+
+<span th:replace="~{home :: footer}"></span>
+</body>
+</html>

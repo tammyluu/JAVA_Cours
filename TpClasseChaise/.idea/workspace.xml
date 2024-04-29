@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3400a80-4638-485c-9a60-da2d3c8aad61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/Servlet/Demo/demo_first_servlet/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JEE/demo_servlet/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JEE/demo_servlet/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2YYxnaVsAQrLWl3q3C1GH6CAkm6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Administrateur/OneDrive - M2I/Bureau/JAVA/TpClasseChaise",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.example.billetterie.classes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.InputManagement">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.book.Demo" />
+      <module name="TP_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IHM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.hotel.IHM" />
+      <module name="TP_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.hotel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.billetterie.utils.InputManagement" />
+      <module name="TP_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.billetterie.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.papeterie_hashMap.classes.Main" />
+      <module name="TP_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.papeterie_hashMap.classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InputManagement" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.IHM" />
+        <item itemvalue="Application.Demo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3400a80-4638-485c-9a60-da2d3c8aad61" name="Changes" comment="" />
+      <created>1700716481815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700716481815</updated>
+      <workItem from="1700716482808" duration="3042000" />
+      <workItem from="1700803935774" duration="30921000" />
+      <workItem from="1701001035829" duration="20197000" />
+      <workItem from="1701412768599" duration="8937000" />
+      <workItem from="1701422185409" duration="1165000" />
+      <workItem from="1701423374457" duration="5805000" />
+      <workItem from="1705996549354" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

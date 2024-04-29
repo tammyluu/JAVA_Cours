@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css">
+    <title>Students List</title>
+</head>
+<body>
+<header>
+    <span th:replace="~{home :: navBar}"></span>
+</header>
+<div class="container mt-2">
+    <div class="card">
+        <div class="card-header"> List of Student</div>
+        <div class="card-body">
+            <form method="get" th:action="@{/list}">
+
+                <input type="text" name="keyword" th:value="keyword">
+                <button type="submit" class="btn btn-primary" >Search</button>
+            </form>
+
+
+            <table class="table" th:unless="${students.isEmpty()}">
+                <thead>
+                <tr>
+                    <th>Nom</th><th>Prénom</th><th>Détail</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="s:${students}">
+                    <td th:text="${s.lastName}"></td>
+                    <td th:text="${s.firstName}"></td>
+                    <td><a th:href="@{/detail/{studentId}(studentId=${s.id})}" class="btn btn-outline-info"><i class="bi-bi-eye"></i></a></td>
+                    <td><a onclick="return confirm('Are you sure to remove this student?')" class="btn btn-danger" th:href="@{/delete/{id}(id=${s.id})}"></a>Delete</td>
+                </tr>
+               </tbody>
+
+            </table>
+            <p th:if="${students.isEmpty()}">Student not found</p>
+        </div>
+    </div>
+
+</div>
+<span th:replace="~{home :: footer}"></span>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <th:block th:fragment="bootstrapImports">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+    </th:block>
+
+</head>
+<body>
+<header>
+    <th:block th:fragment="navBar">
+
+        <nav class="navbar navbar-inverse  navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">IT -Edu</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a th:href="@{/}">Home</a></li>
+                        <li><a th:href="@{/form}">Poster</a></li>
+                        <li><a th:href="@{/posts}">List of Post</a></li>
+
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <section class="banner-section">
+        </section>
+        <section class="post-content-section">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
+                        <main class="container">
+                        <h1 class="text-center ">IT- EDU</h1>
+                        <h4 class="text-center text-light" th:text="${contact}"></h4>
+                        </main>
+                        <ul class="list-inline text-center">
+                            <li>Author |</li>
+                            <li>Category |</li>
+                            <li>Date |</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </th:block>
+</header>
+<div class="col-lg-9 col-md-9 col-sm-12">
+    <div class="container mt-2">
+        <h1>NEW POSTS</h1>
+        <div class="card">
+            <div class="card-header"> List of Posts</div>
+            <div class="card-body">
+                <form method="get" th:action="@{/posts}">
+                    <input type="text" name="keyword" th:value="${keyword}">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="col-lg-3  col-md-3 col-sm-12">
+    <div class="well">
+        <h2>Subscription</h2>
+        <p>Form Description </p>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+        </div>
+    </div>
+    <div class="well">
+        <h2>Share love</h2>
+        <ul class="list-inline">
+            <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
+            <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
+            <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
+            <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
+
+        </ul>
+    </div>
+    <div class="well">
+        <h2>About Author</h2>
+        <img src="" class="img-rounded" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+        <a href="#" class="btn btn-default">Read more</a>
+    </div>
+
+        <div class="media"> <div class="media-left"> <a href="#"> <img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px; height: 64px;" src="https://images.unsplash.com/photo-1588239034647-25783cbfcfc1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXxlbnwwfHwwfHx8Mg%3D%3D" data-holder-rendered="true"> </a> </div> <div class="media-body"> <h4 class="media-heading">JAVA</h4> Cras sit amet nibh libero, in gravida nulla.</div> </div>
+        <div class="media"> <div class="media-left"> <a href="#"> <img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px; height: 64px;" src="https://images.unsplash.com/photo-1594904351111-a072f80b1a71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGMlMjBwcm9ncmFtbWluZ3xlbnwwfHwwfHx8Mg%3D%3D" data-holder-rendered="true"> </a> </div> <div class="media-body"> <h4 class="media-heading">C++</h4> Cras sit amet nibh libero, in gravida nulla.</div> </div>
+        <div class="media"> <div class="media-left"> <a href="#"> <img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px; height: 64px;" src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHB5dGhvbiUyMGNvZGV8ZW58MHx8MHx8fDI%3D" data-holder-rendered="true"> </a> </div> <div class="media-body"> <h4 class="media-heading">PYTHON</h4> Cras sit amet nibh libero, in gravida nulla.</div> </div>
+    </div>
+</div>
+</div>
+
+
+</div>
+
+
+
+    <th:block th:fragment="footer">
+        <section class="footer-link"> <h2 th:text="${name}"></h2>
+            <h2 th:text="${contact}"></h2>
+        </section>
+    </th:block>
+</body>
+</html>

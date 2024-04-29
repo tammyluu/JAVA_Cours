@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>page B</title>
+    <span th:replace="~{pagea :: bootstrapImports}"></span>
+</head>
+<body>
+<header>
+    <h1> Page B</h1>
+    <nav>
+        <a th:href="@{/}">Home Page</a>
+    </nav>
+</header>
+ <a th:href="@{/detail/{id}(id=${idRabbit})}"> Detail of rabbit</a>
+<div class="container">
+<!--    <p th:if="${rabbits != null}" > Rabbit not found</p>-->
+<table th:unless="${rabbits == null}" class="table" >
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Breed</th>
+        <th>Show detail</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="r : ${rabbits}">
+        <td th:text="${r.id}"></td>
+        <td th:text="${r.name}"></td>
+        <td th:text="${r.breed}"></td>
+        <td ><a th:href="@{/detail/{id}(id=${r.id})}"> Detail of rabbit</a></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>

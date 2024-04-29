@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+    <span th:replace="~{home :: bootstrapImports}"></span>
+
+</head>
+<body>
+<span th:replace="~{home :: navBar}"></span>
+<h1>Detail</h1>
+<div class="card">
+    <div class="container" th:object="${post}">
+        <h1 class="text-left text-primary">  <span th:text="*{title}"></span></h1>
+        <hr>
+        <h3 class="text-left"> <span th:text="*{description}"></span></h3>
+        <p><span th:text="*{content}"></span></p>
+
+        <input type="hidden" th:field="*{id}">
+        <h1 class="mt-8 text-center">Review</h1>
+        <hr>
+
+        <div class="card-header"> The Comments of Post</div>
+    <div class="card-body">
+        <form method="get" th:action="@{/posts}">
+            <input type="text" name="keyword" th:value="${keyword}">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>User</th>
+                <th>Email</th>
+                <th>Content</th>
+                <th>Options</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="comment, index : ${post.comments}">
+                <td class="text-center" th:text="${index + 1}"></td>
+                <td class="text-center" th:text="${comment.fullName}"></td>
+                <td class="text-center" th:text="${comment.email}"></td>
+                <td class="text-center" th:text="${comment.content}"></td>
+                <td><a th:href="@{/update/{postId}(postId=${post.id})}" class="btn btn-info">Update</a></td>
+                <td><a onclick="return confirm('Are you sure to remove this post?')" class="btn btn-danger" th:href="@{/delete/{id}(id=${p.id})}">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="container mt-3">
+            <a th:href="@{/add/{postId}(postId=${post.id})}" class="d-flex justify-content-end">
+                <button class="btn btn-primary">Add comment</button>
+            </a>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+<span th:replace="~{home :: footer}"></span>
+</body>
+</html>

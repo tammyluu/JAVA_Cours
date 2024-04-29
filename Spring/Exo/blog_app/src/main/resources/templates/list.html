@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+
+    <span th:replace="~{home :: bootstrapImports}"></span>
+</head>
+<body>
+<span th:replace="~{home :: navBar}"></span>
+
+<div class="container mt-2">
+    <div class="container mt-5">
+        <h1 class="text-center">All Posts</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <ul class="list-group">
+                    <!-- Thymeleaf Posts Loop -->
+                    <li th:each="post : ${posts}" class="list-group-item">
+                        <h3 th:text="${post.title}" class="mb-1"></h3>
+                        <p th:text="${post.description}" class="mb-1"></p>
+                        <p th:text="${post.content}" class="mb-1"></p>
+                        <a th:href="@{/post/{postId}(postId=${post.id})}" class="btn btn-primary">View Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<p th:if="${posts.isEmpty()}">No posts found</p>
+<span th:replace="~{home :: footer}"></span>
+</body>
+</html>

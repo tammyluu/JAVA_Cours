@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f835c869-5c6a-4152-945d-c64a45f723cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../JDBC/DEMO/jdbc_DAO2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/DEMO/jdbc_DAO2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/EXERCICE/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/EXERCICE/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/EXERCICE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/EXERCICE/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/EXERCICE/compteBancaire_jdbc/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/EXERCICE/compteBancaire_jdbc/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/EXERCICE/demo_DAO_jdbc/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/EXERCICE/demo_DAO_jdbc/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2aOZOOLXfJ94bhJNBTpbi2U41f3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Administrateur/OneDrive - M2I/Bureau/JAVA/JPA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f835c869-5c6a-4152-945d-c64a45f723cd" name="Changes" comment="" />
+      <created>1704191552374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704191552374</updated>
+      <workItem from="1704191553358" duration="1274000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

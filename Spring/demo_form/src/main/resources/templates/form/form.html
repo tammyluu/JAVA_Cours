@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <span th:replace="~{pagea :: bootstrapImports}"></span>
+</head>
+<body>
+
+<header>
+    <h1>Detail of rabbit</h1>
+    <a th:href="@{/}">Home</a>
+</header>
+<main>
+<!--    <form th:action="@{/add}" th:object="${rabbit}" method="post">-->
+    <form th:action="@{/add}" th:object="${rabbit}" method="get">
+      <div>
+          <label for="name">Name of rabbit: </label>
+          <input type="text" id="name" th:field="*{name}">
+      </div>
+        <div>
+            <label for="breed">Race of rabbit: </label>
+            <input type="text" id="breed" th:field="*{breed}">
+        </div>
+        <button>Submit</button>
+    </form>
+</main>
+</body>
+</html>
