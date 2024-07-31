@@ -1,6 +1,6 @@
 package org.example.models;
 
-public enum Status {
+public enum OperationStatus {
     DEPOSIT,
     WITHDRAWAL;
 

@@ -1,185 +1,151 @@
 package org.example.utils;
 
 import org.example.models.BankAccount;
-import org.example.models.Client;
-import org.example.models.Operation;
-import org.example.service.BankAccountService;
-import org.example.service.ClientService;
-import org.example.service.IBankService;
-import org.example.service.OperationService;
 
-import java.awt.color.ICC_ColorSpace;
-import java.util.List;
+import org.example.models.Customer;
+import org.example.models.Operation;
+import org.example.service.IBankService;
+
 import java.util.Scanner;
 
 public class IHM {
-    private IBankService _bankService;
+    private Scanner scanner;
+
     private String choix;
-     public   Scanner sc = new Scanner(System.in);
-    private  ClientService clientService = new ClientService();
-    private   BankAccountService bankAccountService = new BankAccountService();
-    private   OperationService operationService = new OperationService();
+
+    private IBankService _bankService;
 
     public IHM(IBankService bankService){
-        Scanner sc = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         _bankService = bankService;
     }
-    public static void startMenu(){
-        boolean running = true;
-        while (running) {
-            System.out.println("\n--------------Menu Principal-----------------");
-            System.out.println(" 1. Créer d'un nouveau client et son compte");
-            System.out.println(" 2. Dépôt d'argent pour son compte");
-            System.out.println(" 3. Retrait d'argent de son compte");
-            System.out.println(" 4. Affichage compte");
-            System.out.println(" 5. Affichage de tous les comptes d'un client");
-            System.out.println(" 6. Ajouter un compte à un client");
-            System.out.println(" 7. Créer d'un nouveau client");
-            System.out.println(" 0. Quitter");
-            System.out.println("---------------------------------------------\n");
-            System.out.print("Choix : ");
 
-            int choice = sc.nextInt();
-            sc.nextLine(); // Clear the newline character
-
-            switch (choice) {
-                case 1:
+    public void start(){
+        do {
+            menu();
+            choix = scanner.nextLine();
+            switch (choix){
+                case "1" :
                     createAccountAndCustomer();
                     break;
-                case 2:
-                     deposit();
+                case "2" :
+                    deposit();
                     break;
-                case 3:
+                case "3" :
                     withDrawal();
                     break;
-                case 4:
+                case "4" :
                     getAccountOperation();
                     break;
-                case 5:
-                    showAllAccountAndClient();
+                case "5" :
+                    showAllAccountCustomer();
                     break;
-                case 6:
+                case "6" :
                     addAccountToClient();
                     break;
-                case 7:
-                    createClient();
+                case "7" :
+                    createCustomer();
                     break;
-                case 0:
-                    running = false;
-                    break;
-                default:
-                    System.out.println("Choix invalide !");
+
             }
-        }
-        System.out.println("Au revoir !");
+
+
+        }while (!choix.equals("0"));
     }
 
-    private  void showAllClients(){
-        List<Client> clients = clientService.getAllClients();
-        for (Client c: clients
-             ) {
-            System.out.println(c);
-        }
+    private void menu(){
+        System.out.println("########## Menu Principal ##########");
+        System.out.println("1- Création d'un client et son compte");
+        System.out.println("2- Dépôt");
+        System.out.println("3- Retrait");
+        System.out.println("4- Affichage compte");
+        System.out.println("5- Affichage de tous les compte d'un client");
+        System.out.println("6- Ajouter un compte à un client");
+        System.out.println("7- Création d'un client");
+        System.out.println("0- Quitter");
+        System.out.println(" Votre choix : ");
     }
-    private void updateClient() {
-        System.out.print("ID de l'utilisateur à modifier : ");
-        int id = sc.nextInt();
-        sc.nextLine(); // Clear the newline character
 
-        Client client = clientService.getPerson(id);
-        if (client == null) {
-            System.out.println("Utilisateur non trouvé !");
-            return;
-        }
-    }
-    private  void deleteAClient() {
-        System.out.print("ID de l'client à supprimer : ");
-        int id = sc.nextInt();
-        sc.nextLine();
+    private void createAccountAndCustomer(){
+        int idClient = createCustomer();
+        BankAccount bankAccount = _bankService.createAndSaveAccount(idClient);
+        System.out.println("Client et compte crée (id du compte : "+ bankAccount.getId() +" ) ");
 
-        clientService.deleteOneClient(id);
-        System.out.println("Un(e) client supprimé avec succès !");
     }
-    private  void createAccountAndCustomer(){
-        System.out.println("************** choix 1 ************");
-        int id_Client = createClient();
-        BankAccount bankAccount = _bankService.createAndSaveAccount(id_Client);
-        System.out.println("Client et compte créer (id du compte : " + bankAccount.getIdAccount() + ")");
-    }
-    private  void deposit(){
-        System.out.println("************** choix 2 ************");
-        System.out.print("Merci de saisir le numéro de compte (id): ");
-        String id = sc.nextLine();
-        sc.nextLine();
-        System.out.print("Merci de saisir le montant du dépôt de compte (id): ");
-        double amount = sc.nextDouble();
-        sc.nextLine();
-        if (_bankService.makeperationDepopsit(amount*-1,id)){
-            System.out.println("dépôt réussi ");
-        }else {
-            System.out.println("erreur");
-        }
-    }
-    private  void withDrawal(){
-        System.out.println("************** choix 3 ************");
-        System.out.print("Merci de saisir le numéro de compte (id): ");
-        String id = sc.nextLine();
-        sc.nextLine();
-        System.out.print("Merci de saisir le montant du retrait de votre compte : ");
-        double amount = sc.nextDouble();
-        sc.nextLine();
-        if (_bankService.makeperationWithdrawal(amount*-1,id)){
-            System.out.println("retrait réussi ");
+    private void deposit(){
+        System.out.println("##### Choix 2 #####");
+        System.out.println("Merci de saisir le numéro de compte (id) :");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Merci de saisir le montant du dépôt :");
+        double montant = scanner.nextDouble();
+        scanner.nextLine();
+        if(_bankService.makeOperationDeposit(montant,id)){
+            System.out.println("dépot réussi");
         }else {
             System.out.println("erreur");
         }
 
+    }
+    private void withDrawal(){
+        System.out.println("##### Choix 3 #####");
+        System.out.println("Merci de saisir le numéro de compte (id) :");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Merci de saisir le montant du retrait :");
+        double montant = scanner.nextDouble();
+        scanner.nextLine();
+        if(_bankService.makeOperationWithDraw(montant*-1,id)){
+            System.out.println("retrait réussi");
+        }else {
+            System.out.println("erreur");
+        }
     }
     private void getAccountOperation(){
-        System.out.println("************** choix 4 ************");
-        System.out.print("Merci de saisir le numéro de compte (id): ");
-        String id = sc.nextLine();
-        sc.nextLine();
+        System.out.println("##### Choix 4 #####");
+        System.out.println("Merci de saisir le numéro de compte (id) :");
+        int id = scanner.nextInt();
+        scanner.nextLine();
         BankAccount bankAccount = _bankService.getAccount(id);
-        if (bankAccount != null){
-            for (Operation o: _bankService.getAllOperationsById()
-                 ) {
+        if(bankAccount != null){
+            for (Operation op : _bankService.getAllOperationsByIdAccount(bankAccount.getId())){
+                System.out.println(op);
+            }
+            System.out.println("Solde actuelle du compte : "+bankAccount.getTotalAmount());
+        }
 
+    }
+    private void showAllAccountCustomer(){
+        System.out.println("##### Choix 5 #####");
+        System.out.println("Merci de saisir le numéro du client (id) :");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+        _bankService.getAccountsByIdCustomer(id).forEach(e -> System.out.println(e));
+
+    }
+    private void addAccountToClient(){
+        System.out.println("##### Choix 6 #####");
+        System.out.println("Merci de saisir le numéro du client (id) :");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+        Customer customer = _bankService.getCustomerById(id);
+        if(customer != null){
+            BankAccount bankAccount = _bankService.createAndSaveAccount(customer.getId());
+            if(bankAccount != null) {
+                System.out.println("Compte crée avec l'id : "+bankAccount.getId()+" pour le client : "+customer.getLastName().toUpperCase());
             }
         }
     }
-    private  void showAllAccountAndClient(){
-        System.out.println("************** choix 5  ************");
-        System.out.print("Merci de saisir le numéro de client (id): ");
-        int id = sc.nextInt();
-        sc.nextLine();
-        _bankService.getAccountsByIdClient(id).forEach(e -> System.out.println(e));
+    private int createCustomer(){
+        System.out.println("##### Choix 7 #####");
+        System.out.println("##### Choix 1 #####");
+        System.out.println("Merci de saisir le nom : ");
+        String lastName = scanner.nextLine();
+        System.out.println("Merci de saisir le prénom : ");
+        String firstName = scanner.nextLine();
+        System.out.println("Merci de saisir le téléphone : ");
+        String phone = scanner.nextLine();
+        Customer customer = _bankService.createAndSaveCustomer(firstName,lastName,phone);
+        return customer.getId();
     }
-    private  void addAccountToClient(){
-        System.out.println("************** choix 6 ************");
-        System.out.print("Merci de saisir le numéro de client (id): ");
-        int id = sc.nextInt();
-        sc.nextLine();
-        Client client = _bankService.getClientById(id);
-        if (client != null){
-            BankAccount bankAccount = _bankService.createAndSaveAccount(client.getIdClient());
-            if(bankAccount != null){
-                System.out.println("compte crée avce l'id : " + bankAccount.getIdAccount()+ " pour client " + client.getFirstName().toUpperCase());
-            }
-        }
-    }
-    private int createClient() {
-        int id_Client = 0;
-        System.out.println("************** choix 7 ************");
-        System.out.print("Nom  : ");
-        String firstName = sc.nextLine();
-        System.out.print("Prenom : ");
-        String lastName = sc.nextLine();
-        System.out.print("Numéro de téléphone : ");
-        String  phoneNumber = sc.nextLine();
-
-        Client client =  _bankService.createAClient(firstName,lastName,phoneNumber);
-        return  id_Client;
-    }
-
 }
